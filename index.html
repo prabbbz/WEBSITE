@@ -1,156 +1,159 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PRABU ROLEPLAY — Open World Indonesia</title>
-  <meta name="description" content="PRABU ROLEPLAY — dunia open-world roleplay Indonesia.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#07090b">
+  <meta name="description" content="PRABU ROLEPLAY — Indonesian open world roleplay.">
+  <title>PRABU ROLEPLAY — Enter Your Story</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="noise"></div>
+  <div class="cursor-glow"></div>
+  <div class="grain"></div>
 
-  <header class="nav">
-    <a class="brand" href="#home">
-      <span class="brand-mark">P</span>
-      <span>PRABU <b>ROLEPLAY</b></span>
+  <header class="nav" id="nav">
+    <a class="brand" href="#home" aria-label="PRABU ROLEPLAY">
+      <span class="brand-logo">P</span>
+      <span class="brand-text">PRABU <small>ROLEPLAY</small></span>
     </a>
-    <nav>
-      <a href="#home">HOME</a>
+    <nav class="desktop-nav">
+      <a class="active" href="#home">HOME</a>
+      <a href="#world">WORLD</a>
       <a href="#features">FEATURES</a>
       <a href="#gallery">GALLERY</a>
       <a href="#community">COMMUNITY</a>
-      <a href="#download">DOWNLOAD</a>
     </nav>
-    <a class="nav-btn" href="#download">PLAY NOW <span>↗</span></a>
+    <a class="nav-cta" href="#download">PLAY NOW <span>↗</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu"><span></span><span></span></button>
   </header>
 
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home">HOME</a><a href="#world">WORLD</a><a href="#features">FEATURES</a>
+    <a href="#gallery">GALLERY</a><a href="#community">COMMUNITY</a><a href="#download">PLAY NOW ↗</a>
+  </div>
+
   <main>
-    <section id="home" class="hero">
-      <div class="hero-bg"></div>
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <div class="eyebrow"><i></i> INDONESIAN OPEN WORLD ROLEPLAY</div>
-        <h1>YOUR CITY.<br><em>YOUR STORY.</em></h1>
-        <p>Masuki dunia roleplay yang hidup. Bangun reputasi, cari penghasilan, buat koneksi, dan tentukan sendiri cerita karaktermu.</p>
-        <div class="hero-actions">
-          <a class="primary" href="#download">MULAI BERMAIN <span>→</span></a>
-          <a class="secondary" href="#features">JELAJAHI DUNIA</a>
+    <section class="hero" id="home">
+      <div class="hero-image"></div>
+      <div class="hero-vignette"></div>
+      <div class="hero-lines"></div>
+      <div class="hero-content reveal">
+        <div class="status-pill"><span class="live-dot"></span> SERVER ONLINE <b id="heroPlayers">128</b></div>
+        <div class="hero-kicker">INDONESIAN OPEN WORLD ROLEPLAY</div>
+        <h1>LIVE<br><span>YOUR STORY.</span></h1>
+        <p>Masuki kota yang terus bergerak. Bangun nama, cari uang, buat koneksi, dan tentukan sendiri siapa dirimu di dalamnya.</p>
+        <div class="hero-buttons">
+          <a class="btn-primary" href="#download">ENTER THE CITY <span>→</span></a>
+          <a class="btn-ghost" href="#world">DISCOVER WORLD <span>⌄</span></a>
         </div>
-        <div class="hero-meta">
-          <span><b>24/7</b> SERVER ONLINE</span>
-          <span><b>PC</b> PLATFORM</span>
-          <span><b>ID</b> INDONESIA</span>
-        </div>
-      </div>
-      <div class="scroll">SCROLL TO EXPLORE <span>↓</span></div>
-    </section>
-
-    <section class="server-bar">
-      <div><span class="dot"></span><b>SERVER ONLINE</b></div>
-      <div>PLAYERS <strong id="players">128</strong></div>
-      <div>SERVER IP <strong>play.praburp.id</strong></div>
-      <button onclick="copyIP()">COPY IP</button>
-    </section>
-
-    <section id="features" class="section">
-      <div class="section-head">
-        <div>
-          <span class="kicker">THE EXPERIENCE</span>
-          <h2>BUKAN SEKADAR<br><em>ROLEPLAY.</em></h2>
-        </div>
-        <p>Setiap sistem dirancang untuk membuat kota terasa hidup dan setiap keputusan memiliki cerita.</p>
-      </div>
-
-      <div class="feature-grid">
-        <article class="feature-card large">
-          <div class="number">01</div>
-          <div class="icon">◈</div>
-          <h3>OPEN WORLD</h3>
-          <p>Jelajahi kota luas dengan berbagai tempat, aktivitas, dan kejadian yang terus berkembang.</p>
-        </article>
-        <article class="feature-card">
-          <div class="number">02</div>
-          <div class="icon">⌁</div>
-          <h3>DEEP ROLEPLAY</h3>
-          <p>Bangun karakter dari nol dan ciptakan perjalananmu sendiri.</p>
-        </article>
-        <article class="feature-card">
-          <div class="number">03</div>
-          <div class="icon">◇</div>
-          <h3>JOBS & ECONOMY</h3>
-          <p>Bekerja, berdagang, membuka bisnis, atau memilih jalan yang berbeda.</p>
-        </article>
-        <article class="feature-card">
-          <div class="number">04</div>
-          <div class="icon">△</div>
-          <h3>CUSTOM VEHICLES</h3>
-          <p>Koleksi kendaraan dan tampilkan gaya berkendaramu di jalanan kota.</p>
-        </article>
-        <article class="feature-card">
-          <div class="number">05</div>
-          <div class="icon">◎</div>
-          <h3>COMMUNITY</h3>
-          <p>Temui pemain lain, bentuk kelompok, dan buat cerita yang sulit dilupakan.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="gallery" class="gallery-section">
-      <div class="section-head compact">
-        <div>
-          <span class="kicker">FROM THE CITY</span>
-          <h2>LIVE THE <em>MOMENT.</em></h2>
+        <div class="hero-stats">
+          <div><strong>24/7</strong><span>ONLINE WORLD</span></div>
+          <i></i>
+          <div><strong>PC</strong><span>PLATFORM</span></div>
+          <i></i>
+          <div><strong>ID</strong><span>INDONESIA</span></div>
         </div>
       </div>
-      <div class="gallery">
-        <div class="shot shot-1"><span>CITY / 01</span></div>
-        <div class="shot shot-2"><span>NIGHT / 02</span></div>
-        <div class="shot shot-3"><span>STREET / 03</span></div>
+      <div class="hero-bottom">
+        <span>SCROLL TO EXPLORE</span><div class="scroll-line"><b></b></div><span>01 / 05</span>
       </div>
     </section>
 
-    <section id="community" class="community">
-      <div class="community-bg"></div>
-      <div class="community-content">
-        <span class="kicker">OFFICIAL COMMUNITY</span>
-        <h2>FIND YOUR<br><em>PEOPLE.</em></h2>
-        <p>Gabung ke komunitas resmi untuk mendapatkan update, event, bantuan, dan bertemu pemain lain.</p>
-        <a class="primary" href="#" onclick="fakeLink(event)">JOIN DISCORD <span>↗</span></a>
+    <section class="live-strip">
+      <div class="live-left"><span class="live-dot"></span><strong>LIVE SERVER</strong><span>PRABU ROLEPLAY</span></div>
+      <div class="live-data"><span>PLAYERS <b id="players">128</b></span><span>STATUS <b class="green">OPERATIONAL</b></span><span>REGION <b>ID</b></span></div>
+      <button onclick="copyIP()">play.praburp.id <span>⧉</span></button>
+    </section>
+
+    <section class="intro section" id="world">
+      <div class="section-label">01 — THE WORLD</div>
+      <div class="intro-grid">
+        <div class="section-title reveal">
+          <p class="mini">A CITY BUILT FOR STORIES</p>
+          <h2>THIS IS<br><em>YOUR WORLD.</em></h2>
+        </div>
+        <div class="intro-copy reveal">
+          <p>PRABU ROLEPLAY dibuat untuk pemain yang ingin lebih dari sekadar masuk server dan bermain. Di sini, setiap pekerjaan, pertemanan, kendaraan, dan keputusan dapat menjadi bagian dari cerita.</p>
+          <a href="#features" class="text-link">EXPLORE THE EXPERIENCE <span>→</span></a>
+        </div>
+      </div>
+      <div class="world-cards">
+        <article class="world-card city">
+          <div><small>01</small><h3>A LIVING CITY</h3><p>Jalanan, bisnis, malam, dan kehidupan kota yang terasa terus bergerak.</p></div>
+          <span class="card-arrow">↗</span>
+        </article>
+        <article class="world-card career">
+          <div><small>02</small><h3>BUILD YOUR NAME</h3><p>Mulai dari bawah dan bentuk reputasi sesuai jalan yang kamu pilih.</p></div>
+          <span class="card-arrow">↗</span>
+        </article>
+        <article class="world-card social">
+          <div><small>03</small><h3>FIND YOUR CREW</h3><p>Buat koneksi, bangun kelompok, dan ciptakan momen bersama.</p></div>
+          <span class="card-arrow">↗</span>
+        </article>
       </div>
     </section>
 
-    <section id="download" class="download">
-      <div class="download-box">
-        <span class="kicker">READY TO PLAY?</span>
-        <h2>ENTER THE<br><em>CITY.</em></h2>
-        <p>Download launcher dan mulai ceritamu sekarang.</p>
-        <div class="downloads">
-          <a href="#" onclick="fakeLink(event)" class="download-card">
-            <span class="platform">WINDOWS</span>
-            <strong>DOWNLOAD LAUNCHER</strong>
-            <small>Windows 10 / 11 • 64-bit</small>
-            <b>↓</b>
-          </a>
-          <a href="#" onclick="fakeLink(event)" class="download-card">
-            <span class="platform">ANDROID</span>
-            <strong>DOWNLOAD CLIENT</strong>
-            <small>Android 9.0+ • Mobile</small>
-            <b>↓</b>
-          </a>
+    <section class="marquee"><div>PRABU ROLEPLAY <span>✦</span> YOUR CITY <span>✦</span> YOUR STORY <span>✦</span> PRABU ROLEPLAY <span>✦</span> YOUR CITY <span>✦</span></div></section>
+
+    <section class="features section" id="features">
+      <div class="section-label">02 — EXPERIENCE</div>
+      <div class="section-title split reveal"><p class="mini">MADE FOR ROLEPLAY</p><h2>EVERYTHING<br><em>HAS A PURPOSE.</em></h2><p class="side-copy">Sistem yang saling terhubung untuk membuat kehidupan karakter terasa punya arah.</p></div>
+      <div class="feature-list">
+        <article><span>01</span><div class="feature-icon">◈</div><div><h3>OPEN WORLD</h3><p>Jelajahi lingkungan luas dengan lokasi dan aktivitas yang beragam.</p></div><b>↗</b></article>
+        <article><span>02</span><div class="feature-icon">⌁</div><div><h3>JOBS & ECONOMY</h3><p>Bekerja, berdagang, mengembangkan bisnis, dan kelola penghasilanmu.</p></div><b>↗</b></article>
+        <article><span>03</span><div class="feature-icon">◇</div><div><h3>VEHICLE LIFE</h3><p>Kendarai dan koleksi kendaraan untuk menemani perjalananmu.</p></div><b>↗</b></article>
+        <article><span>04</span><div class="feature-icon">◎</div><div><h3>DEEP SOCIAL</h3><p>Interaksi pemain menjadi bagian penting dari kehidupan kota.</p></div><b>↗</b></article>
+        <article><span>05</span><div class="feature-icon">△</div><div><h3>EVENTS</h3><p>Event komunitas dan aktivitas kota untuk membuat dunia tetap hidup.</p></div><b>↗</b></article>
+      </div>
+    </section>
+
+    <section class="showcase" id="gallery">
+      <div class="showcase-top section">
+        <div class="section-label">03 — GALLERY</div>
+        <div class="showcase-head reveal"><h2>SEE THE<br><em>CITY.</em></h2><p>Visual sementara ini bisa kita ganti dengan screenshot/gameplay PRABU milikmu sendiri.</p></div>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item g1"><span>CITY / 01</span></div>
+        <div class="gallery-item g2"><span>NIGHT / 02</span></div>
+        <div class="gallery-item g3"><span>STREET / 03</span></div>
+        <div class="gallery-item g4"><span>ROAD / 04</span></div>
+      </div>
+    </section>
+
+    <section class="community section" id="community">
+      <div class="community-panel reveal">
+        <div class="community-bg"></div>
+        <div class="community-content">
+          <div class="section-label">04 — COMMUNITY</div>
+          <h2>YOUR PEOPLE.<br><em>YOUR CREW.</em></h2>
+          <p>Gabung komunitas resmi untuk update server, event, support, dan bertemu pemain lain.</p>
+          <a class="btn-primary" href="#" onclick="fakeLink(event,'DISCORD LINK BELUM DIATUR')">JOIN DISCORD <span>↗</span></a>
+        </div>
+        <div class="discord-card"><span class="discord-icon">◉</span><div><b>PRABU COMMUNITY</b><small>Official Community</small></div><strong>● ONLINE</strong></div>
+      </div>
+    </section>
+
+    <section class="download section" id="download">
+      <div class="section-label">05 — GET STARTED</div>
+      <div class="download-grid">
+        <div class="download-title reveal"><p class="mini">READY WHEN YOU ARE</p><h2>ENTER<br><em>THE CITY.</em></h2><p>Launcher dan client resmi akan ditempatkan di sini saat server siap.</p></div>
+        <div class="download-options">
+          <a href="#" class="download-card" onclick="fakeLink(event,'DOWNLOAD WINDOWS BELUM DIATUR')"><span>WINDOWS / 01</span><h3>LAUNCHER</h3><small>Windows 10 / 11 • 64-bit</small><b>↓</b></a>
+          <a href="#" class="download-card" onclick="fakeLink(event,'DISCORD BELUM DIATUR')"><span>COMMUNITY / 02</span><h3>DISCORD</h3><small>News • Events • Support</small><b>↗</b></a>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="brand"><span class="brand-mark">P</span><span>PRABU <b>ROLEPLAY</b></span></div>
-    <p>© 2026 PRABU ROLEPLAY. Community project.</p>
+    <div class="footer-brand"><span class="brand-logo">P</span><b>PRABU <small>ROLEPLAY</small></b></div>
+    <div>© 2026 PRABU ROLEPLAY</div>
+    <div class="footer-links"><a href="#home">TOP ↑</a><a href="#">PRIVACY</a><a href="#">RULES</a></div>
   </footer>
-
   <div id="toast"></div>
   <script src="script.js"></script>
 </body>
