@@ -1,113 +1,118 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#07080c">
-<meta name="description" content="Server GTA Roleplay Indonesia untuk Android & PC.">
-<title>Vice Side Roleplay — Open World Roleplay Indonesia</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#07090d">
+  <meta name="description" content="PRABU ROBLOX HUB — koleksi game Roblox ReyyYuzora.">
+  <title>PRABU ROBLOX HUB — Games</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="site-bg"></div>
-<header class="nav" id="nav">
-  <a class="brand" href="#hero"><img src="images/logo.png" alt="" onerror="this.style.display='none'"><span>VICE SIDE<small>ROLEPLAY</small></span></a>
-  <nav id="menu">
-    <a href="#hero">Home</a><a href="#preview">Preview</a><a href="#features">Features</a><a href="#gallery">Gallery</a><a href="#community">Komunitas</a><a href="#download">Download</a>
-  </nav>
-  <div class="nav-r"><span class="ver">v2.8.2</span><a class="btn sm" href="#download">Download</a><button id="burger" aria-label="Menu">☰</button></div>
-</header>
+  <div class="grain"></div>
+  <div class="ambient a1"></div><div class="ambient a2"></div>
 
-<section class="hero" id="hero">
-  <div class="hero-bg"></div>
-  <div class="wrap hero-in">
-    <h1>VICE SIDE ROLEPLAY</h1>
-    <p class="tag">Play • Roleplay • Together</p>
-    <p class="lead">Server GTA Roleplay Indonesia untuk Android &amp; PC. Masuki kota Los Santos, bangun reputasimu, dan tentukan jalan ceritamu.</p>
-    <div class="cta">
-      <a class="btn" href="#download">Download Game</a>
-      <a class="btn ghost" data-href="discord" target="_blank" rel="noopener">Discord</a>
-      <a class="btn ghost" data-href="whatsapp" target="_blank" rel="noopener">Saluran WA</a>
-      <a class="btn ghost" href="#preview">Trailer</a>
-    </div>
-    <div class="pills"><span>Support Android &amp; PC</span><span>Versi 2.8.2</span><span><i class="dot"></i>Server Online 24/7</span><span>Asia / Indonesia</span></div>
-    <div class="ipbox">
-      <div><b>Vice Side Roleplay Official</b><p>Masukkan alamat IP server ini di client Android atau launcher PC kamu.</p></div>
-      <code data-text="ip"></code><button class="btn sm" id="copyIp">Salin IP</button>
-    </div>
+  <header class="topbar" id="topbar">
+    <a class="brand" href="#home">
+      <span class="logo">P</span>
+      <span>PRABU <small>ROBLOX HUB</small></span>
+    </a>
+    <nav>
+      <a class="active" href="#home">HOME</a>
+      <a href="#games">GAMES</a>
+      <a href="#about">CREATOR</a>
+    </nav>
+    <a class="profile-btn" href="https://www.roblox.com/users/9164965658/profile" target="_blank">ROBLOX PROFILE ↗</a>
+    <button class="menu" id="menu"><i></i><i></i></button>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#home">HOME</a><a href="#games">GAMES</a><a href="#about">CREATOR</a>
+    <a href="https://www.roblox.com/users/9164965658/profile" target="_blank">ROBLOX PROFILE ↗</a>
   </div>
-</section>
 
-<section id="preview" class="sec"><div class="wrap">
-  <p class="eyebrow">Cinematic Showcase</p><h2>EXPERIENCE VICE SIDE</h2>
-  <p class="sub">Rasakan atmosfer dunia roleplay modern dengan visual tajam, framerate stabil, dan kota yang hidup 24/7.</p>
-  <button class="trailer" id="trailer"><span class="play">▶</span><span><b>WATCH GAMEPLAY TRAILER</b><small>Cuplikan aksi, kejar-kejaran &amp; gameplay server</small></span><em>1080p 60FPS</em></button>
-  <div class="grid g3">
-    <article class="card"><h3>Cross-Platform Synced</h3><p>Pemain Android dan PC bermain di kota yang sama tanpa pemisahan server.</p></article>
-    <article class="card"><h3>Voice Roleplay 3D</h3><p>Suara proximity jernih dengan efek akustik ruang, radio HT, dan panggilan telepon.</p></article>
-    <article class="card"><h3>Low Spec Friendly</h3><p>Optimalisasi asset ringan memastikan performa mulus di berbagai perangkat Android dan laptop.</p></article>
-  </div>
-</div></section>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-media" id="heroMedia"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <div class="eyebrow"><span></span> OFFICIAL ROBLOX GAME HUB</div>
+        <h1>PLAY.<br><em>CREATE.</em><br>REPEAT.</h1>
+        <p>Kumpulan game Roblox buatan <strong>ReyyYuzora</strong>. Pilih game, lihat detailnya, lalu langsung masuk ke Roblox.</p>
+        <div class="hero-actions">
+          <a class="primary" href="#games">EXPLORE GAMES <b>↓</b></a>
+          <a class="ghost" href="https://www.roblox.com/users/9164965658/profile" target="_blank">CREATOR PROFILE ↗</a>
+        </div>
+        <div class="hero-counts">
+          <div><b id="heroGameCount">—</b><small>PUBLIC GAMES</small></div>
+          <div class="sep"></div>
+          <div><b id="heroVisits">—</b><small>TOTAL VISITS</small></div>
+          <div class="sep"></div>
+          <div><b id="heroPlaying">—</b><small>PLAYING NOW</small></div>
+        </div>
+      </div>
+      <div class="hero-foot"><span>REYY YUZORA / 9164965658</span><span>SCROLL TO EXPLORE ↓</span></div>
+    </section>
 
-<section id="features" class="sec"><div class="wrap">
-  <p class="eyebrow">Core Gameplay</p><h2>WHY VICE SIDE?</h2>
-  <p class="sub">Nikmati pengalaman roleplay murni dengan kebebasan penuh menentukan nasib karaktermu.</p>
-  <div class="grid g3">
-    <article class="card f"><small>Vast Map</small><h3>OPEN WORLD</h3><p>Jelajahi dunia Vice Side yang dinamis, penuh detail, dan temukan berbagai aktivitas legal maupun ilegal.</p></article>
-    <article class="card f"><small>Deep Lore</small><h3>ROLEPLAY</h3><p>Bangun karakter dan reputasimu dari nol. Jadilah penegak hukum, pebisnis sukses, gangster, atau warga biasa.</p></article>
-    <article class="card f"><small>Custom Tuning</small><h3>VEHICLES</h3><p>Kustomisasi, beli, dan nikmati sensasi ratusan kendaraan eksotis, muscle car, hingga superbike.</p></article>
-    <article class="card f"><small>Dynamic Market</small><h3>JOBS &amp; ECONOMY</h3><p>Cari pekerjaan legal, bangun bisnis mandiri, atau ambil risiko dalam sindikat gelap untuk membangun kekayaanmu.</p></article>
-    <article class="card f"><small>Real Estate</small><h3>PROPERTY</h3><p>Miliki apartemen mewah, mansion tepi pantai, gudang rahasia, dan garasi untuk menyimpan seluruh asetmu.</p></article>
-    <article class="card f"><small>High FPS Synced</small><h3>MULTIPLAYER</h3><p>Bermain bersama ratusan pemain aktif dalam satu server tersinkronisasi dengan voice roleplay jernih.</p></article>
-  </div>
-</div></section>
+    <section class="statsbar">
+      <div><span class="live"></span><b>LIVE CATALOG</b><small>DATA FROM ROBLOX</small></div>
+      <div><b id="gameCount">—</b><small>PUBLIC EXPERIENCES</small></div>
+      <div><b id="totalVisits">—</b><small>TOTAL VISITS</small></div>
+      <div><b id="totalPlaying">—</b><small>PLAYING NOW</small></div>
+      <div class="updated">AUTO REFRESH <b>ON</b></div>
+    </section>
 
-<section id="gallery" class="sec"><div class="wrap">
-  <p class="eyebrow">In-Game Photography</p><h2>SCREENSHOT GALLERY</h2>
-  <p class="sub">Potret visual dunia Vice Side Roleplay langsung dari dalam permainan.</p>
-  <div class="gal">
-    <figure class="shot s1"><figcaption><small>Roleplay</small><h3>Vice Side Launcher</h3></figcaption></figure>
-    <figure class="shot s2"><figcaption><small>World</small><h4>Midnight Roleplay City</h4></figcaption></figure>
-    <figure class="shot s3"><figcaption><small>Economy</small><h4>Custom HUD &amp; Settings</h4></figcaption></figure>
-  </div>
-</div></section>
+    <section class="games-section" id="games">
+      <div class="section-head">
+        <div>
+          <span class="label">01 — GAME LIBRARY</span>
+          <h2>CHOOSE YOUR<br><em>GAME.</em></h2>
+        </div>
+        <div class="head-copy">Daftar di bawah mengambil pengalaman publik dari akun Roblox creator secara otomatis.</div>
+      </div>
 
-<section id="community" class="sec"><div class="wrap">
-  <p class="eyebrow">Official Community</p><h2>GABUNG KOMUNITAS</h2>
-  <p class="sub">Terhubung dengan ribuan pemain Vice Side Roleplay lainnya, dapatkan info update, bantuan teknis, dan event terbaru.</p>
-  <div class="grid g2">
-    <article class="card com"><small>Server Utama</small><h4>Server Discord Resmi</h4><h3>VICE SIDE MOBILE &amp; PC</h3>
-      <p>Pusat komunikasi pemain, voice chat roleplay, pendaftaran whitelist, pelaporan bug, dan pengumuman update server langsung dari developer.</p>
-      <div class="stats"><div><small>Total Member</small><b data-text="members"></b></div><div><small>Sedang Online</small><b data-text="online"></b></div></div>
-      <a class="btn" data-href="discord" target="_blank" rel="noopener">Join Discord Server</a></article>
-    <article class="card com wa"><small>Update Cepat</small><h4>Saluran WhatsApp</h4><h3>VICE SIDE CHANNEL</h3>
-      <p>Saluran resmi WhatsApp Vice Side Roleplay. Dapatkan broadcast jadwal event, update patch client, maintenance, dan info penting langsung di HP kamu tanpa spam.</p>
-      <ul><li>Broadcast pengumuman dan maintenance realtime</li><li>Update link APK &amp; Launcher versi terbaru</li><li>Informasi event &amp; giveaway server</li></ul>
-      <a class="btn" data-href="whatsapp" target="_blank" rel="noopener">Gabung Saluran WhatsApp</a></article>
-  </div>
-</div></section>
+      <div class="toolbar">
+        <div class="search"><span>⌕</span><input id="search" placeholder="Search games..." autocomplete="off"></div>
+        <div class="filters" id="filters">
+          <button class="selected" data-filter="all">ALL</button>
+          <button data-filter="popular">POPULAR</button>
+          <button data-filter="playing">PLAYING NOW</button>
+        </div>
+        <button class="refresh" id="refresh">↻ REFRESH</button>
+      </div>
 
-<section id="download" class="sec"><div class="wrap">
-  <p class="eyebrow">Ready To Play</p><h2>PLAY VICE SIDE</h2>
-  <p class="sub">Version: 2.8.2 · Latest Release</p>
-  <div class="grid g2">
-    <article class="card dl"><small>Mobile Edition</small><h3>ANDROID</h3><p>Latest Version (v2.8.2)</p><p>Android compatible (Android 9.0+)</p><p>Mobile optimized touch controls</p>
-      <a class="btn" data-href="apk" target="_blank" rel="noopener">DOWNLOAD ANDROID</a><em>Format: .APK • Direct official server download</em></article>
-    <article class="card dl"><small>Desktop Edition</small><h3>PC WINDOWS</h3><p>Windows 10 / 11 64-bit compatible</p><p>Optimized for desktop high refresh rate</p><p>Full roleplay experience with launcher auto-update</p>
-      <a class="btn" data-href="pc" target="_blank" rel="noopener">DOWNLOAD PC</a><em>Format: .EXE • Official installer with auto-patch</em></article>
-  </div>
-  <p class="note">Semua file unduhan telah dipindai dan bebas dari malware berbahaya.</p>
-</div></section>
+      <div class="featured" id="featured"></div>
+      <div class="grid" id="gameGrid">
+        <div class="loading"><span></span><p>LOADING ROBLOX EXPERIENCES...</p></div>
+      </div>
+      <div class="empty" id="empty" hidden>
+        <strong>NO GAME FOUND</strong>
+        <span>Coba kata kunci lain.</span>
+      </div>
+    </section>
 
-<footer class="foot"><div class="wrap">
-  <div class="brand"><img src="images/logo.png" alt="" onerror="this.style.display='none'"><span>VICE SIDE<small>v2.8.2</small></span></div>
-  <p>Server roleplay open-world komunitas Indonesia untuk Android &amp; PC.</p>
-  <nav><a href="#hero">Home</a><a href="#preview">Preview</a><a href="#features">Features</a><a href="#gallery">Gallery</a><a href="#community">Komunitas</a><a href="#download">Download</a><a data-href="discord" target="_blank" rel="noopener">Discord</a><a data-href="whatsapp" target="_blank" rel="noopener">Saluran WA</a></nav>
-  <small>© 2026 Vice Side Roleplay. All rights reserved.<br>Vice Side Roleplay adalah server modifikasi komunitas independen dan tidak berafiliasi dengan Rockstar Games atau Take-Two Interactive.</small>
-</div></footer>
-<div class="toast" id="toast"></div>
-<script src="script.js"></script>
+    <section class="about" id="about">
+      <div class="about-inner">
+        <div class="about-avatar">P</div>
+        <div>
+          <span class="label">02 — CREATOR</span>
+          <h2>REYY<span>YUZORA</span></h2>
+          <p>Official game collection dari creator Roblox. Semua game yang tersedia secara publik akan tampil otomatis di website ini.</p>
+        </div>
+        <a class="primary" href="https://www.roblox.com/users/9164965658/profile" target="_blank">OPEN ROBLOX PROFILE ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand"><span class="logo">P</span><span>PRABU <small>ROBLOX HUB</small></span></div>
+    <span>© 2026 PRABU ROBLOX HUB</span>
+    <a href="#home">BACK TO TOP ↑</a>
+  </footer>
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
 </body>
 </html>
