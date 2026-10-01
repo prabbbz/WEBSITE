@@ -1,160 +1,113 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#07090b">
-  <meta name="description" content="PRABU ROLEPLAY — Indonesian open world roleplay.">
-  <title>PRABU ROLEPLAY — Enter Your Story</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07080c">
+<meta name="description" content="Server GTA Roleplay Indonesia untuk Android & PC.">
+<title>Vice Side Roleplay — Open World Roleplay Indonesia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="cursor-glow"></div>
-  <div class="grain"></div>
+<div class="site-bg"></div>
+<header class="nav" id="nav">
+  <a class="brand" href="#hero"><img src="images/logo.png" alt="" onerror="this.style.display='none'"><span>VICE SIDE<small>ROLEPLAY</small></span></a>
+  <nav id="menu">
+    <a href="#hero">Home</a><a href="#preview">Preview</a><a href="#features">Features</a><a href="#gallery">Gallery</a><a href="#community">Komunitas</a><a href="#download">Download</a>
+  </nav>
+  <div class="nav-r"><span class="ver">v2.8.2</span><a class="btn sm" href="#download">Download</a><button id="burger" aria-label="Menu">☰</button></div>
+</header>
 
-  <header class="nav" id="nav">
-    <a class="brand" href="#home" aria-label="PRABU ROLEPLAY">
-      <span class="brand-logo">P</span>
-      <span class="brand-text">PRABU <small>ROLEPLAY</small></span>
-    </a>
-    <nav class="desktop-nav">
-      <a class="active" href="#home">HOME</a>
-      <a href="#world">WORLD</a>
-      <a href="#features">FEATURES</a>
-      <a href="#gallery">GALLERY</a>
-      <a href="#community">COMMUNITY</a>
-    </nav>
-    <a class="nav-cta" href="#download">PLAY NOW <span>↗</span></a>
-    <button class="menu-btn" id="menuBtn" aria-label="Open menu"><span></span><span></span></button>
-  </header>
-
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="#home">HOME</a><a href="#world">WORLD</a><a href="#features">FEATURES</a>
-    <a href="#gallery">GALLERY</a><a href="#community">COMMUNITY</a><a href="#download">PLAY NOW ↗</a>
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="wrap hero-in">
+    <h1>VICE SIDE ROLEPLAY</h1>
+    <p class="tag">Play • Roleplay • Together</p>
+    <p class="lead">Server GTA Roleplay Indonesia untuk Android &amp; PC. Masuki kota Los Santos, bangun reputasimu, dan tentukan jalan ceritamu.</p>
+    <div class="cta">
+      <a class="btn" href="#download">Download Game</a>
+      <a class="btn ghost" data-href="discord" target="_blank" rel="noopener">Discord</a>
+      <a class="btn ghost" data-href="whatsapp" target="_blank" rel="noopener">Saluran WA</a>
+      <a class="btn ghost" href="#preview">Trailer</a>
+    </div>
+    <div class="pills"><span>Support Android &amp; PC</span><span>Versi 2.8.2</span><span><i class="dot"></i>Server Online 24/7</span><span>Asia / Indonesia</span></div>
+    <div class="ipbox">
+      <div><b>Vice Side Roleplay Official</b><p>Masukkan alamat IP server ini di client Android atau launcher PC kamu.</p></div>
+      <code data-text="ip"></code><button class="btn sm" id="copyIp">Salin IP</button>
+    </div>
   </div>
+</section>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-image"></div>
-      <div class="hero-vignette"></div>
-      <div class="hero-lines"></div>
-      <div class="hero-content reveal">
-        <div class="status-pill"><span class="live-dot"></span> SERVER ONLINE <b id="heroPlayers">128</b></div>
-        <div class="hero-kicker">INDONESIAN OPEN WORLD ROLEPLAY</div>
-        <h1>LIVE<br><span>YOUR STORY.</span></h1>
-        <p>Masuki kota yang terus bergerak. Bangun nama, cari uang, buat koneksi, dan tentukan sendiri siapa dirimu di dalamnya.</p>
-        <div class="hero-buttons">
-          <a class="btn-primary" href="#download">ENTER THE CITY <span>→</span></a>
-          <a class="btn-ghost" href="#world">DISCOVER WORLD <span>⌄</span></a>
-        </div>
-        <div class="hero-stats">
-          <div><strong>24/7</strong><span>ONLINE WORLD</span></div>
-          <i></i>
-          <div><strong>PC</strong><span>PLATFORM</span></div>
-          <i></i>
-          <div><strong>ID</strong><span>INDONESIA</span></div>
-        </div>
-      </div>
-      <div class="hero-bottom">
-        <span>SCROLL TO EXPLORE</span><div class="scroll-line"><b></b></div><span>01 / 05</span>
-      </div>
-    </section>
+<section id="preview" class="sec"><div class="wrap">
+  <p class="eyebrow">Cinematic Showcase</p><h2>EXPERIENCE VICE SIDE</h2>
+  <p class="sub">Rasakan atmosfer dunia roleplay modern dengan visual tajam, framerate stabil, dan kota yang hidup 24/7.</p>
+  <button class="trailer" id="trailer"><span class="play">▶</span><span><b>WATCH GAMEPLAY TRAILER</b><small>Cuplikan aksi, kejar-kejaran &amp; gameplay server</small></span><em>1080p 60FPS</em></button>
+  <div class="grid g3">
+    <article class="card"><h3>Cross-Platform Synced</h3><p>Pemain Android dan PC bermain di kota yang sama tanpa pemisahan server.</p></article>
+    <article class="card"><h3>Voice Roleplay 3D</h3><p>Suara proximity jernih dengan efek akustik ruang, radio HT, dan panggilan telepon.</p></article>
+    <article class="card"><h3>Low Spec Friendly</h3><p>Optimalisasi asset ringan memastikan performa mulus di berbagai perangkat Android dan laptop.</p></article>
+  </div>
+</div></section>
 
-    <section class="live-strip">
-      <div class="live-left"><span class="live-dot"></span><strong>LIVE SERVER</strong><span>PRABU ROLEPLAY</span></div>
-      <div class="live-data"><span>PLAYERS <b id="players">128</b></span><span>STATUS <b class="green">OPERATIONAL</b></span><span>REGION <b>ID</b></span></div>
-      <button onclick="copyIP()">play.praburp.id <span>⧉</span></button>
-    </section>
+<section id="features" class="sec"><div class="wrap">
+  <p class="eyebrow">Core Gameplay</p><h2>WHY VICE SIDE?</h2>
+  <p class="sub">Nikmati pengalaman roleplay murni dengan kebebasan penuh menentukan nasib karaktermu.</p>
+  <div class="grid g3">
+    <article class="card f"><small>Vast Map</small><h3>OPEN WORLD</h3><p>Jelajahi dunia Vice Side yang dinamis, penuh detail, dan temukan berbagai aktivitas legal maupun ilegal.</p></article>
+    <article class="card f"><small>Deep Lore</small><h3>ROLEPLAY</h3><p>Bangun karakter dan reputasimu dari nol. Jadilah penegak hukum, pebisnis sukses, gangster, atau warga biasa.</p></article>
+    <article class="card f"><small>Custom Tuning</small><h3>VEHICLES</h3><p>Kustomisasi, beli, dan nikmati sensasi ratusan kendaraan eksotis, muscle car, hingga superbike.</p></article>
+    <article class="card f"><small>Dynamic Market</small><h3>JOBS &amp; ECONOMY</h3><p>Cari pekerjaan legal, bangun bisnis mandiri, atau ambil risiko dalam sindikat gelap untuk membangun kekayaanmu.</p></article>
+    <article class="card f"><small>Real Estate</small><h3>PROPERTY</h3><p>Miliki apartemen mewah, mansion tepi pantai, gudang rahasia, dan garasi untuk menyimpan seluruh asetmu.</p></article>
+    <article class="card f"><small>High FPS Synced</small><h3>MULTIPLAYER</h3><p>Bermain bersama ratusan pemain aktif dalam satu server tersinkronisasi dengan voice roleplay jernih.</p></article>
+  </div>
+</div></section>
 
-    <section class="intro section" id="world">
-      <div class="section-label">01 — THE WORLD</div>
-      <div class="intro-grid">
-        <div class="section-title reveal">
-          <p class="mini">A CITY BUILT FOR STORIES</p>
-          <h2>THIS IS<br><em>YOUR WORLD.</em></h2>
-        </div>
-        <div class="intro-copy reveal">
-          <p>PRABU ROLEPLAY dibuat untuk pemain yang ingin lebih dari sekadar masuk server dan bermain. Di sini, setiap pekerjaan, pertemanan, kendaraan, dan keputusan dapat menjadi bagian dari cerita.</p>
-          <a href="#features" class="text-link">EXPLORE THE EXPERIENCE <span>→</span></a>
-        </div>
-      </div>
-      <div class="world-cards">
-        <article class="world-card city">
-          <div><small>01</small><h3>A LIVING CITY</h3><p>Jalanan, bisnis, malam, dan kehidupan kota yang terasa terus bergerak.</p></div>
-          <span class="card-arrow">↗</span>
-        </article>
-        <article class="world-card career">
-          <div><small>02</small><h3>BUILD YOUR NAME</h3><p>Mulai dari bawah dan bentuk reputasi sesuai jalan yang kamu pilih.</p></div>
-          <span class="card-arrow">↗</span>
-        </article>
-        <article class="world-card social">
-          <div><small>03</small><h3>FIND YOUR CREW</h3><p>Buat koneksi, bangun kelompok, dan ciptakan momen bersama.</p></div>
-          <span class="card-arrow">↗</span>
-        </article>
-      </div>
-    </section>
+<section id="gallery" class="sec"><div class="wrap">
+  <p class="eyebrow">In-Game Photography</p><h2>SCREENSHOT GALLERY</h2>
+  <p class="sub">Potret visual dunia Vice Side Roleplay langsung dari dalam permainan.</p>
+  <div class="gal">
+    <figure class="shot s1"><figcaption><small>Roleplay</small><h3>Vice Side Launcher</h3></figcaption></figure>
+    <figure class="shot s2"><figcaption><small>World</small><h4>Midnight Roleplay City</h4></figcaption></figure>
+    <figure class="shot s3"><figcaption><small>Economy</small><h4>Custom HUD &amp; Settings</h4></figcaption></figure>
+  </div>
+</div></section>
 
-    <section class="marquee"><div>PRABU ROLEPLAY <span>✦</span> YOUR CITY <span>✦</span> YOUR STORY <span>✦</span> PRABU ROLEPLAY <span>✦</span> YOUR CITY <span>✦</span></div></section>
+<section id="community" class="sec"><div class="wrap">
+  <p class="eyebrow">Official Community</p><h2>GABUNG KOMUNITAS</h2>
+  <p class="sub">Terhubung dengan ribuan pemain Vice Side Roleplay lainnya, dapatkan info update, bantuan teknis, dan event terbaru.</p>
+  <div class="grid g2">
+    <article class="card com"><small>Server Utama</small><h4>Server Discord Resmi</h4><h3>VICE SIDE MOBILE &amp; PC</h3>
+      <p>Pusat komunikasi pemain, voice chat roleplay, pendaftaran whitelist, pelaporan bug, dan pengumuman update server langsung dari developer.</p>
+      <div class="stats"><div><small>Total Member</small><b data-text="members"></b></div><div><small>Sedang Online</small><b data-text="online"></b></div></div>
+      <a class="btn" data-href="discord" target="_blank" rel="noopener">Join Discord Server</a></article>
+    <article class="card com wa"><small>Update Cepat</small><h4>Saluran WhatsApp</h4><h3>VICE SIDE CHANNEL</h3>
+      <p>Saluran resmi WhatsApp Vice Side Roleplay. Dapatkan broadcast jadwal event, update patch client, maintenance, dan info penting langsung di HP kamu tanpa spam.</p>
+      <ul><li>Broadcast pengumuman dan maintenance realtime</li><li>Update link APK &amp; Launcher versi terbaru</li><li>Informasi event &amp; giveaway server</li></ul>
+      <a class="btn" data-href="whatsapp" target="_blank" rel="noopener">Gabung Saluran WhatsApp</a></article>
+  </div>
+</div></section>
 
-    <section class="features section" id="features">
-      <div class="section-label">02 — EXPERIENCE</div>
-      <div class="section-title split reveal"><p class="mini">MADE FOR ROLEPLAY</p><h2>EVERYTHING<br><em>HAS A PURPOSE.</em></h2><p class="side-copy">Sistem yang saling terhubung untuk membuat kehidupan karakter terasa punya arah.</p></div>
-      <div class="feature-list">
-        <article><span>01</span><div class="feature-icon">◈</div><div><h3>OPEN WORLD</h3><p>Jelajahi lingkungan luas dengan lokasi dan aktivitas yang beragam.</p></div><b>↗</b></article>
-        <article><span>02</span><div class="feature-icon">⌁</div><div><h3>JOBS & ECONOMY</h3><p>Bekerja, berdagang, mengembangkan bisnis, dan kelola penghasilanmu.</p></div><b>↗</b></article>
-        <article><span>03</span><div class="feature-icon">◇</div><div><h3>VEHICLE LIFE</h3><p>Kendarai dan koleksi kendaraan untuk menemani perjalananmu.</p></div><b>↗</b></article>
-        <article><span>04</span><div class="feature-icon">◎</div><div><h3>DEEP SOCIAL</h3><p>Interaksi pemain menjadi bagian penting dari kehidupan kota.</p></div><b>↗</b></article>
-        <article><span>05</span><div class="feature-icon">△</div><div><h3>EVENTS</h3><p>Event komunitas dan aktivitas kota untuk membuat dunia tetap hidup.</p></div><b>↗</b></article>
-      </div>
-    </section>
+<section id="download" class="sec"><div class="wrap">
+  <p class="eyebrow">Ready To Play</p><h2>PLAY VICE SIDE</h2>
+  <p class="sub">Version: 2.8.2 · Latest Release</p>
+  <div class="grid g2">
+    <article class="card dl"><small>Mobile Edition</small><h3>ANDROID</h3><p>Latest Version (v2.8.2)</p><p>Android compatible (Android 9.0+)</p><p>Mobile optimized touch controls</p>
+      <a class="btn" data-href="apk" target="_blank" rel="noopener">DOWNLOAD ANDROID</a><em>Format: .APK • Direct official server download</em></article>
+    <article class="card dl"><small>Desktop Edition</small><h3>PC WINDOWS</h3><p>Windows 10 / 11 64-bit compatible</p><p>Optimized for desktop high refresh rate</p><p>Full roleplay experience with launcher auto-update</p>
+      <a class="btn" data-href="pc" target="_blank" rel="noopener">DOWNLOAD PC</a><em>Format: .EXE • Official installer with auto-patch</em></article>
+  </div>
+  <p class="note">Semua file unduhan telah dipindai dan bebas dari malware berbahaya.</p>
+</div></section>
 
-    <section class="showcase" id="gallery">
-      <div class="showcase-top section">
-        <div class="section-label">03 — GALLERY</div>
-        <div class="showcase-head reveal"><h2>SEE THE<br><em>CITY.</em></h2><p>Visual sementara ini bisa kita ganti dengan screenshot/gameplay PRABU milikmu sendiri.</p></div>
-      </div>
-      <div class="gallery-grid">
-        <div class="gallery-item g1"><span>CITY / 01</span></div>
-        <div class="gallery-item g2"><span>NIGHT / 02</span></div>
-        <div class="gallery-item g3"><span>STREET / 03</span></div>
-        <div class="gallery-item g4"><span>ROAD / 04</span></div>
-      </div>
-    </section>
-
-    <section class="community section" id="community">
-      <div class="community-panel reveal">
-        <div class="community-bg"></div>
-        <div class="community-content">
-          <div class="section-label">04 — COMMUNITY</div>
-          <h2>YOUR PEOPLE.<br><em>YOUR CREW.</em></h2>
-          <p>Gabung komunitas resmi untuk update server, event, support, dan bertemu pemain lain.</p>
-          <a class="btn-primary" href="#" onclick="fakeLink(event,'DISCORD LINK BELUM DIATUR')">JOIN DISCORD <span>↗</span></a>
-        </div>
-        <div class="discord-card"><span class="discord-icon">◉</span><div><b>PRABU COMMUNITY</b><small>Official Community</small></div><strong>● ONLINE</strong></div>
-      </div>
-    </section>
-
-    <section class="download section" id="download">
-      <div class="section-label">05 — GET STARTED</div>
-      <div class="download-grid">
-        <div class="download-title reveal"><p class="mini">READY WHEN YOU ARE</p><h2>ENTER<br><em>THE CITY.</em></h2><p>Launcher dan client resmi akan ditempatkan di sini saat server siap.</p></div>
-        <div class="download-options">
-          <a href="#" class="download-card" onclick="fakeLink(event,'DOWNLOAD WINDOWS BELUM DIATUR')"><span>WINDOWS / 01</span><h3>LAUNCHER</h3><small>Windows 10 / 11 • 64-bit</small><b>↓</b></a>
-          <a href="#" class="download-card" onclick="fakeLink(event,'DISCORD BELUM DIATUR')"><span>COMMUNITY / 02</span><h3>DISCORD</h3><small>News • Events • Support</small><b>↗</b></a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer-brand"><span class="brand-logo">P</span><b>PRABU <small>ROLEPLAY</small></b></div>
-    <div>© 2026 PRABU ROLEPLAY</div>
-    <div class="footer-links"><a href="#home">TOP ↑</a><a href="#">PRIVACY</a><a href="#">RULES</a></div>
-  </footer>
-  <div id="toast"></div>
-  <script src="script.js"></script>
+<footer class="foot"><div class="wrap">
+  <div class="brand"><img src="images/logo.png" alt="" onerror="this.style.display='none'"><span>VICE SIDE<small>v2.8.2</small></span></div>
+  <p>Server roleplay open-world komunitas Indonesia untuk Android &amp; PC.</p>
+  <nav><a href="#hero">Home</a><a href="#preview">Preview</a><a href="#features">Features</a><a href="#gallery">Gallery</a><a href="#community">Komunitas</a><a href="#download">Download</a><a data-href="discord" target="_blank" rel="noopener">Discord</a><a data-href="whatsapp" target="_blank" rel="noopener">Saluran WA</a></nav>
+  <small>© 2026 Vice Side Roleplay. All rights reserved.<br>Vice Side Roleplay adalah server modifikasi komunitas independen dan tidak berafiliasi dengan Rockstar Games atau Take-Two Interactive.</small>
+</div></footer>
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
 </body>
 </html>
